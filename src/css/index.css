@@ -1,0 +1,248 @@
+/*reset*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*layout*/
+#layout{
+    display: flex;
+    width: 800px;
+    margin: 0 auto;
+
+}
+
+/*aside*/
+#aside{
+    width: 30%;
+    background: #33276f;
+    color: #fff;
+}
+#aside .avatar-wrapper{
+    position: relative;
+    background: #fff;
+    margin-top: 25px;
+    width: 56%;
+    height: 170px;
+   
+}
+#aside .avatar{
+    position: absolute;
+    right: -80px;
+    background: #fff;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+#aside .avatar img{
+    position: absolute;
+    display: block;
+    top: 5px;
+    right: 5px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+#aside .aside-container{
+    width: 100%;
+    padding: 20px 30px;
+}
+#aside .username{
+    border-bottom: 1px solid #fff;
+}
+#aside .username .text{
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+#aside .my-message{
+    padding: 30px 0;
+    border-bottom: 1px solid #fff;
+}
+#aside .my-message .my-message-wrapper{
+    list-style: none;
+    font-size: 14px;
+}
+#aside .my-message .my-message-wrapper li{
+    height: 20px;
+    margin-top: 20px;
+}
+#aside .my-message .my-message-wrapper li span{
+    display: inline-block;
+    line-height: 20px;
+}
+#aside .my-message .my-message-wrapper li span:last-child{
+    margin-left: 10px;
+}
+
+#aside .about-me{
+    padding: 30px 0;
+    border-bottom: 1px solid #fff;
+}
+#aside .about-me>.text{
+    margin-top: 20px;
+    list-style: none;
+    font-size: 14px;
+}
+#aside .about-me>.text>li{
+    line-height: 30px;
+}
+#aside .weixin{
+    padding: 29px 0;
+    border-bottom: 1px solid #fff;
+}
+#aside .weixin img{
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+}
+#aside .online-resume{
+    padding: 30px 0;
+    border-bottom: 1px solid #fff;
+}
+#aside .online-resume img{
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+}
+#aside .github{
+    padding: 30px 0;
+    border-bottom: 1px solid #fff;
+}
+#aside .github .font{
+    text-align: center;
+    margin-top: 30px;
+}
+#aside i.iconfont.icon-github {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 40px;
+    color: #fff;
+}
+#aside i.iconfont.icon-shu {
+    display: inline-block;
+    font-size: 45px;
+    margin-left: 20px;
+    color: #fff;
+} 
+
+
+
+/*content*/
+#content{
+    flex: 1;
+}
+#content .header{
+    background: #5140a9;
+    height: 80px;
+    line-height: 80px;
+    font-size: 45px;
+    text-align: center;
+    color: #fff;
+}
+#content .content-wrapper{
+    padding: 20px;
+}
+#content .skill .title, #content .project .title, #content .online-resume .title{
+    font-size: 18px;
+    font-weight: bold;
+    color : #333;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+}
+#content .skill .item{
+    list-style: none;
+    margin-top: 10px;
+}
+#content .skill .item .desc{
+    font-size: 14px;
+    list-style: none;
+}
+#content .skill .item .desc li{
+    line-height: 1.5;
+}
+#content .skill .item .desc li::before{
+    content: "";
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: #666;
+}
+
+#content .project{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#content .project>.pro-group{
+    list-style: none;
+}
+#content .project>.pro-group>.pro{
+    margin-top: 10px;
+}
+#content .project>.pro-group>.pro>h4{
+    text-align: center
+}
+#content .project>.pro-group>.pro .pro-item{
+    list-style: none;
+    margin-top: 5px;
+}
+#content .project>.pro-group>.pro .pro-item h4::before{
+    content: "";
+    width: 8px;
+    height: 3px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    background: #666;
+}
+#content .project>.pro-group>.pro .pro-item .desc{
+    font-size: 14px;
+    line-height: 1.5;
+}
+#content .project>.pro-group>.pro .pro-item .tech ul{
+    list-style: none;
+    font-size: 14px;
+}
+#content .project>.pro-group>.pro .pro-item .tech img{
+    margin: 10px auto;
+    display: block;
+    width: 110px;
+    height: 110px;
+}
+#content .project>.pro-group>.pro .pro-item .tech h3{
+    margin-top: 10px;
+    text-align: center;
+}
+#content .project>.pro-group>.pro .pro-item .tech ul>li{
+    line-height: 1.5;
+
+}
+#content .project>.pro-group>.pro .pro-item .tech ul>li>h5::before{
+    content: "";
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: #666;
+}
+#content .online-resume{
+    padding-top: 5px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+#content .online-resume a{
+    text-decoration: none;
+    color: #000;
+}
+/*footer*/
+#footer{
+    background: #33276f;
+    width: 5%;
+
+}
