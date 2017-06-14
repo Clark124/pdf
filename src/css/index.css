@@ -236,9 +236,14 @@
     text-align: center;
     border-top: 1px solid #ccc;
 }
+#content .online-resume p{
+    font-size: 14px;
+    color: #666;
+}
 #content .online-resume a{
     text-decoration: none;
-    color: #000;
+    color: #666;
+    font-size: 14px;
 }
 /*footer*/
 #footer{
