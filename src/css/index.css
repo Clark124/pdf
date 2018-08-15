@@ -146,7 +146,7 @@
 #content .content-wrapper{
     padding: 20px;
 }
-#content .skill .title, #content .project .title, #content .online-resume .title{
+#content .skill .title, #content .exprerience .title, #content .project .title, #content .online-resume .title{
     font-size: 18px;
     font-weight: bold;
     color : #333;
@@ -173,7 +173,26 @@
     border-radius: 50%;
     background: #666;
 }
-
+#content .exprerience{
+    margin-top: 20px;
+}
+#content .exprerience .job{
+    font-size: 14px;
+}
+#content .exprerience ul li{
+    font-size: 14px;
+    list-style: none;
+    margin-top: 10px;
+}
+/* #content .exprerience ul li::before{
+    content: "";
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: #666;
+} */
 #content .project{
     margin-top: 20px;
     margin-bottom: 10px;
@@ -189,7 +208,7 @@
 }
 #content .project>.pro-group>.pro .pro-item{
     list-style: none;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 #content .project>.pro-group>.pro .pro-item h4::before{
     content: "";
@@ -231,6 +250,10 @@
     border-radius: 50%;
     background: #666;
 }
+#content .page-url{
+    /* color: #333; */
+    text-decoration: none;
+}
 #content .online-resume{
     padding-top: 5px;
     text-align: center;
@@ -244,6 +267,24 @@
     text-decoration: none;
     color: #666;
     font-size: 14px;
+}
+.main-tech-title{
+    font-size: 15px;
+    font-weight: 600;
+    color: #666;
+}
+.main-tech-list li{
+    list-style: none;
+    font-size: 14px;
+}
+.main-tech-list li::before{
+    content: "";
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: #666;
 }
 /*footer*/
 #footer{
